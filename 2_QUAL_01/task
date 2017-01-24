@@ -1,0 +1,51 @@
+Chemical Reactions
+
+
+Everybody knows that a huge number of different chemical reactions happen in cells. A reaction takes as an input a set of chemicals (substrates) and converts them to another set (products). Here we consider all reactions to be one-directional. A substrates for a reaction could be chemicals from the environment or products from other reactions.
+
+A scientist John Doe was given a cell and a list of chemicals that are present in the environment at the beginning. He already knows what reactions could happen in the cell. You should help him to understand which chemicals could appear in the cell.
+
+
+Input Format
+
+
+The first line contains initial chemicals separated by spaces. Each chemical is represented by a positive number. Each of the following lines describes a reaction, one per line. Each reaction is presented as two lists of integers separated by '->': the list of chemicals, separated by '+', that is needed to perform a reaction and the list of chemicals, separated by '+', that are produced as a result of the reaction. Each chemical could be present in each reaction maximum 2 times: one time at the left part and the other time at the right part (for example, a catalyst could appear in both parts).
+
+Constraints for the easy version: a total number of chemicals through all reactions does not exceed 103103.
+Constraints for the hard version: a total number of chemicals through all reactions does not exceed 105105.
+
+
+Output Format
+
+
+The sole line of the output should contain the unordered list of all chemicals that could appear in the cell at any moment of time.
+
+
+Examples
+
+Sample Input 1
+
+4
+4+6->1
+2->3+5
+4->6
+6+4->5
+Sample Output 1:
+
+1 4 5 6
+Sample Input 2
+
+
+1 2
+1+2->4
+1+2->3
+3->4+5
+4->4
+Sample Output 2
+
+
+1 5 2 4 3
+Limits
+
+Memory limit per test: 256 Megabytes
+Time limit per test: 2 seconds
